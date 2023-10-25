@@ -37,7 +37,7 @@
   padding: var(--#{$prefix}accordion-btn-padding-y) var(--#{$prefix}accordion-btn-padding-x);
   @include font-size($font-size-base);
   color: var(--#{$prefix}accordion-btn-color);
-  text-align: left; // Reset button style
+  text-align: start; // Reset button style
   background-color: var(--#{$prefix}accordion-btn-bg);
   border: 0;
   @include border-radius(0);
@@ -60,7 +60,7 @@
     flex-shrink: 0;
     width: var(--#{$prefix}accordion-btn-icon-width);
     height: var(--#{$prefix}accordion-btn-icon-width);
-    margin-left: auto;
+    margin-inline-start: auto;
     content: "";
     background-image: var(--#{$prefix}accordion-btn-icon);
     background-repeat: no-repeat;
@@ -132,8 +132,8 @@
   }
 
   .accordion-item {
-    border-right: 0;
-    border-left: 0;
+    border-inline-end: 0;
+    border-inline-start: 0;
     @include border-radius(0);
 
     &:first-child { border-top: 0; }

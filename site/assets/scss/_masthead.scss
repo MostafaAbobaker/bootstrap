@@ -37,7 +37,7 @@
     @include border-radius(calc(.5rem - 1px));
 
     @include media-breakpoint-up(lg) {
-      padding-right: 4rem;
+      padding-inline-end: 4rem;
     }
 
     pre {
@@ -49,7 +49,7 @@
   .btn-clipboard {
     position: absolute;
     top: -.625rem;
-    right: 0;
+    inset-inline-end: 0;
     background-color: transparent;
   }
 

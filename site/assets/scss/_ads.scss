@@ -13,7 +13,7 @@
   overflow: hidden;
   @include font-size(.8125rem);
   line-height: 1.4;
-  text-align: left;
+  text-align: start;
   background-color: var(--bs-tertiary-bg);
 
   a {
@@ -28,7 +28,7 @@
 
 .carbon-img {
   float: left;
-  margin-left: -145px;
+  margin-inline-start: -145px;
 }
 
 .carbon-poweredby {

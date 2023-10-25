@@ -34,7 +34,7 @@
 
   position: fixed;
   top: 0;
-  left: 0;
+  inset-inline-start: 0;
   z-index: var(--#{$prefix}modal-zindex);
   display: none;
   width: 100%;
@@ -183,8 +183,8 @@
   // Automatically set modal's width for larger viewports
   .modal-dialog {
     max-width: var(--#{$prefix}modal-width);
-    margin-right: auto;
-    margin-left: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
   }
 
   .modal-sm {

@@ -31,14 +31,14 @@
   @include media-breakpoint-up(lg) {
     position: absolute;
     top: .875rem;
-    left: 50%;
+    inset-inline-start: 50%;
     width: 200px;
-    margin-left: -100px;
+    margin-inline-start: -100px;
   }
 
   @include media-breakpoint-up(xl) {
     width: 280px;
-    margin-left: -140px;
+    margin-inline-start: -140px;
   }
 
 }
@@ -115,16 +115,16 @@
   top: 0;
   width: auto;
   height: 1.25rem;
-  padding-right: .125rem;
-  padding-left: .125rem;
-  margin-right: 0;
+  padding-inline-end: .125rem;
+  padding-inline-start: .125rem;
+  margin-inline-end: 0;
   font-size: .875rem;
   background: none;
   box-shadow: none;
 }
 
 .DocSearch-Commands-Key {
-  padding-left: 1px;
+  padding-inline-start: 1px;
   font-size: .875rem;
   background-color: rgba($black, .1);
   background-image: none;

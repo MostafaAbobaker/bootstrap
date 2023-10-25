@@ -8,8 +8,8 @@
   border-width: 1px 0;
 
   @include media-breakpoint-up(md) {
-    margin-right: 0;
-    margin-left: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
     border-width: 1px;
     @include border-radius(var(--bs-border-radius));
   }
@@ -28,8 +28,8 @@
   @include media-breakpoint-up(md) {
     --bd-example-padding: 1.5rem;
 
-    margin-right: 0;
-    margin-left: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
     border-width: 1px;
     @include border-radius(var(--bs-border-radius));
   }
@@ -68,7 +68,7 @@
   // Images
   > svg + svg,
   > img + img {
-    margin-left: .5rem;
+    margin-inline-start: .5rem;
   }
 
   // Buttons
@@ -319,26 +319,26 @@
 
     > span {
       position: absolute;
-      right: 5px;
+      inset-inline-end: 5px;
       bottom: 0;
     }
   }
 
   > :nth-child(2) {
     top: 3rem;
-    left: 3rem;
+    inset-inline-start: 3rem;
   }
   > :nth-child(3) {
     top: 4.5rem;
-    left: 4.5rem;
+    inset-inline-start: 4.5rem;
   }
   > :nth-child(4) {
     top: 6rem;
-    left: 6rem;
+    inset-inline-start: 6rem;
   }
   > :nth-child(5) {
     top: 7.5rem;
-    left: 7.5rem;
+    inset-inline-start: 7.5rem;
   }
 }
 
@@ -358,7 +358,7 @@
 
   @include media-breakpoint-up(lg) {
     pre {
-      margin-right: 1.875rem;
+      margin-inline-end: 1.875rem;
     }
   }
 
@@ -380,7 +380,7 @@
 }
 
 .bd-example-snippet .highlight pre {
-  margin-right: 0;
+  margin-inline-end: 0;
 }
 
 .highlight-toolbar {

@@ -56,11 +56,11 @@
     th,
     td {
       &:first-child {
-        padding-left: 0;
+        padding-inline-start: 0;
       }
 
       &:not(:last-child) {
-        padding-right: 1.5rem;
+        padding-inline-end: 1.5rem;
       }
     }
 
@@ -121,7 +121,7 @@
 
 .border-lg-start {
   @include media-breakpoint-up(lg) {
-    border-left: var(--bs-border-width) solid var(--bs-border-color);
+    border-inline-start: var(--bs-border-width) solid var(--bs-border-color);
   }
 }
 
